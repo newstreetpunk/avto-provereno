@@ -128,17 +128,16 @@ h1 {
 }
 
 @media(max-width: 992px) {
-	body {
-		background-size: calc(var(--index)*30);
-		background-position: bottom 5% center;
-	}
-
 	.logo {
 		width: 90%;
 	}
 }
 
 @media(max-width: 586px) {
+	body {
+		background-size: calc(var(--index)*30);
+		background-position: bottom 5% center;
+	}
 	.logo {
 		width: 100%;
 	}
