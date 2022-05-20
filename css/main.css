@@ -35,15 +35,15 @@ body {
 	min-width: 320px;
 	position: relative;
 	overflow: hidden;
+	background: #f9f9f9 url(../img/cars.png);
+	background-size: calc(var(--index)*30);
+	background-repeat: no-repeat;
+	background-position: bottom right 10%;
 }
 .container{
 	max-width: 90%;
 	margin: 0 auto;
 	height: 100vh;
-	background-image: url(../img/cars.png);
-	background-size: 50%;
-	background-repeat: no-repeat;
-	background-position: bottom right;
 	padding-top: 5%;
 }
 
@@ -82,4 +82,19 @@ h1{
 	height: calc(var(--index)*30);
 	width: auto;
 	margin: auto
+}
+
+@media(max-width: 992px){
+	body{
+		background-size: calc(var(--index)*30);
+		background-position: bottom 5% center;
+	}
+	.logo{
+		width: 90%;
+	}
+}
+@media(max-width: 586px){
+	.logo{
+		width: 100%;
+	}
 }
