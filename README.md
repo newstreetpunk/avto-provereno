@@ -1,3 +1,3 @@
 # АвтоПроверено.рф
 
-<img src="img/variant-4A.png" />
+<img src="img/og-image.png" />
