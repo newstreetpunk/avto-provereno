@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap');
+/* USER VARIABLES SECTION */
+:root {
+	--purple: #4D328D;
+	--green: #6FB31A;
+	--gray: #808080;
+	--text: #000;
+	--index: calc(1vw + 1vh);
+	--regular-text: 16px;
+	--lineheight: 1.65;
+	--userfont: 'Inter', sans-serif;
+	--systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+}
+
+/* FONTS LOAD SECTION */
+/* @font-face { src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 400; font-style: normal; } */
+
+/* GENERAL CSS SETTINGS */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+::placeholder { color: #666; }
+::selection { background-color: var(--accent); color: #fff; }
+input, textarea { outline: none; }
+input:focus:required:invalid, textarea:focus:required:invalid { border-color: red; }
+input:required:valid, textarea:required:valid { border-color: green; }
+
+body {
+	font-family: var(--userfont);
+	font-size: var(--regular-text);
+	line-height: var(--lineheight);
+	color: var(--text);
+	min-width: 320px;
+	position: relative;
+	overflow: hidden;
+}
+.container{
+	max-width: 90%;
+	margin: 0 auto;
+	height: 100vh;
+	background-image: url(../img/cars.png);
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	padding-top: 5%;
+}
+
+/* USER STYLES */
+.image {
+	max-width: 100%;
+}
+
+.purple{
+	color: var(--purple);
+}
+
+.green{
+	color: var(--green);
+}
+
+.logo{
+	width: 50%;
+}
+
+h1{
+	font-weight: bold;
+	font-size: calc(var(--index)*2.23);
+	line-height: 1.1;
+	margin: 4% 0 0;
+}
+
+.phone{
+	font-weight: bold;
+	text-decoration: none;
+	font-size: calc(var(--index)*3);
+}
+
+.primary-image{
+	display: block;
+	height: calc(var(--index)*30);
+	width: auto;
+	margin: auto
+}
