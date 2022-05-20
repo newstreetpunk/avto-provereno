@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap');
-
 /* USER VARIABLES SECTION */
 :root {
 	--purple: #4D328D;
 	--green: #6FB31A;
 	--gray: #808080;
+	--bg: #f9f9f9;
 	--text: #000;
 	--index: calc(1vw + 1vh);
 	--regular-text: 16px;
@@ -14,7 +13,19 @@
 }
 
 /* FONTS LOAD SECTION */
-/* @font-face { src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 400; font-style: normal; } */
+@font-face {
+	src: url("../fonts/Inter-Light.woff2") format("woff2");
+	font-family: "Inter";
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	src: url("../fonts/Inter-Bold.woff2") format("woff2");
+	font-family: "Inter";
+	font-weight: 700;
+	font-style: normal;
+}
 
 /* GENERAL CSS SETTINGS */
 * {
@@ -46,9 +57,11 @@ input:required:valid,
 textarea:required:valid {
 	border-color: green;
 }
-html{
+
+html {
 	height: 100%;
 }
+
 body {
 	font-family: var(--userfont);
 	font-size: var(--regular-text);
@@ -58,7 +71,7 @@ body {
 	min-width: 320px;
 	position: relative;
 	overflow: hidden;
-	background: #f9f9f9 url(../img/cars.png);
+	background: var(--bg) url(../img/cars.png);
 	background-size: calc(var(--index)*30);
 	background-repeat: no-repeat;
 	background-position: bottom right 10%;
