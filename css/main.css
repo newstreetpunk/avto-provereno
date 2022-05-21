@@ -71,7 +71,8 @@ body {
 	min-width: 320px;
 	position: relative;
 	overflow: hidden;
-	background: var(--bg) url(../img/cars.png);
+	background-color: var(--bg);
+	background-image: url(../img/cars/cars-1440p.jpg);
 	background-size: calc(var(--index)*30);
 	background-repeat: no-repeat;
 	background-position: bottom right 10%;
@@ -128,6 +129,9 @@ h1 {
 }
 
 @media(max-width: 992px) {
+	body {
+		background-image: url(../img/cars/cars-1080p.jpg);
+	}
 	.logo {
 		width: 90%;
 	}
@@ -137,6 +141,7 @@ h1 {
 	body {
 		background-size: calc(var(--index)*30);
 		background-position: bottom 5% center;
+		background-image: url(../img/cars/cars-720p.jpg);
 	}
 	.logo {
 		width: 100%;
